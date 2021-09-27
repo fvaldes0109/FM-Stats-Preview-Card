@@ -3,14 +3,29 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: Inter-400;
+    src: url('./fonts/inter/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: Inter-700;
+    src: url('./fonts/inter/static/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: Lexend-Deca;
+    src: url('./fonts/Lexend-Deca/static/LexendDeca-Regular.ttf');
+}
+
 body {
     background-color: hsl(233, 47%, 7%);
 }
 
 #card {
     background-color: hsl(244, 38%, 16%);
-    width: 80%;
-    margin: 10% 10% 30px;
+    width: 1100px;
+    margin: 10% auto 30px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -26,16 +41,58 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: hsla(277, 77%, 33%, 0.5);
+    background-color: hsla(277, 89%, 25%, 0.5);
 }
 
 picture img {
     float: left;
     width: 100%;
     height: auto;
-    color:hsl(244, 38%, 16%)
 }
 
-#section {
-    float: left;
+section {
+    padding: 5%;
+    width: 45%;
+}
+
+h1, p, span {
+    color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-family: Inter-700;
+    font-size: 33px;
+    padding: 5%;
+}
+
+p {
+    font-family: Inter-400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding: 0 5%;
+}
+
+strong {
+    color: hsl(277, 64%, 61%);
+}
+
+#stats {
+    width: 100%;
+    display: flex;
+    margin: 13% 0 0;
+}
+
+.data {
+    flex: 1;
+}
+
+.data-number {
+    font-family: Inter-700;
+    font-size: 24px;
+}
+
+.data-name {
+    font-family: Lexend-Deca;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
 }
